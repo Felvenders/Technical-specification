@@ -1,2 +1,35 @@
 # Technical-specification
-Terms of reference for the company Click2Money
+
+Terms of reference for the company Click2Money 
+Потапкин Данила
+
+1. Задача: Написать последовательность Фибоначчи и быть готовым ее модернизировать
+            Условия: Любой язык, если нет, то псевдокод.
+            
+Решение: 
+
+public class Test {
+    public static void main(String[] args) {
+
+        for (int n = 1; n <= 20; n++) {
+            System.out.println(fibonacci(n));
+        }
+    }
+
+    public static int fibonacci(int n) {
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+2. Вопрос: Можно ли послать GET запрос с body. Что произойдет если да, если нет то почему
+Ответ: Да, можно посдать (стандарт не запрещает), но большинство серверов проигнорируют body у GET-запроса
+
+3. Задача: Есть сайт https://www.tretyakovgallery.ru/. Написать тест кейсы на главную страницу 
+Решение: https://docs.google.com/spreadsheets/d/1aBmbEsDqnSBv-9KFdrcHn2PwV79NgpcFFVrCIq2gp8U/edit?usp=sharing
+
+4. Условия: Не открывается сайт приложения. Задача : описать ваши действия в сложившейся ситуации.
+Ответ: первым делом я проверю свои сетевые настройки и наличие подключения к сети. Возможно, что сайт запрещен на территории страны, поэтому попробую подключиться через VPN. Если ничего не помогает, то какое-то время подожду, пока неполадку не испраят. Если попасть на сайт очень нужно, то попробую поменять DNS-сервер
